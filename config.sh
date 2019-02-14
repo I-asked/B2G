@@ -308,6 +308,8 @@ if [ $? -ne 0 ]; then
 	exit -1
 fi
 
+find gecko -name Android.mk | xargs rm -f
+
 mv .tmp-config .config
 
 echo Run \|./build.sh\| to start building
