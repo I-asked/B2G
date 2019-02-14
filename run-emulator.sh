@@ -67,8 +67,7 @@ ${DBG_CMD} $EMULATOR \
    -partition-size 512 \
    -skindir $B2G_HOME/development/tools/emulator/skins \
    -skin HVGA \
-   -verbose \
-   -gpu on \
-   -camera-back webcam0 \
    $emu_extra_args \
-   -qemu $TAIL_ARGS
+   -verbose \
+   -no-skin -no-audio -no-boot-anim -show-kernel \
+   -qemu $TAIL_ARGS -append android.selinux=0 -append selinux=0
