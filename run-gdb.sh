@@ -173,6 +173,7 @@ elif [ "$1" != "core" ]; then
 fi
 
 PROG=$GECKO_OBJDIR/dist/bin/$(basename $B2G_BIN)
+PROG=../gecko-dev/obj-arm-unknown-linux-androideabi/dist/bin/b2g
 [ -f $PROG ] || PROG=${SYMDIR}/${B2G_BIN}
 [ -f $PROG ] || PROG=${B2G_BIN}
 if [ ! -f $PROG ]; then

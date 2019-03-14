@@ -65,6 +65,7 @@ ${DBG_CMD} $EMULATOR \
    -sdcard ${SDCARD_IMG} \
    -memory 512 \
    -partition-size 512 \
+   -gpu on \
    -skindir $B2G_HOME/development/tools/emulator/skins \
    -skin HVGA \
    $emu_extra_args \
